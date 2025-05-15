@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory Systems</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+    }
+    th {
+      background-color: #4169E1;
+      color: white;
+    }
+    thead tr th[colspan="6"] {
+      background-color: #3A6EA5;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .highlight {
+      background-color: #FFEB99;
+      font-weight: bold;
+    }
+    .low-qty {
+      color: red;
+    }
+    .gray-bg {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="6">INVENTORY SYSTEMS</th>
+      </tr>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Supplier</th>
+        <th>Date</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10001</td>
+        <td>Boy Bawang Adobo (pc)</td>
+        <td>1000</td>
+        <td></td>
+        <td>5/14/2019</td>
+        <td rowspan="8">
+          <img src="BoyB.jpg" alt="Boy Bawang" width="100">
+        </td>
+      </tr>
+      <tr class="gray-bg">
+        <td>10002</td>
+        <td>Boy Bawang Adobo (pack)</td>
+        <td>200</td>
+        <td></td>
+        <td>5/14/2019</td>
+      </tr>
+      <tr>
+        <td>10003</td>
+        <td>Boy Bawang Garlic (pc)</td>
+        <td>3000</td>
+        <td></td>
+        <td>5/15/2019</td>
+      </tr>
+      <tr class="gray-bg">
+        <td>10004</td>
+        <td>Boy Bawang Garlic (pack)</td>
+        <td class="low-qty">150</td>
+        <td class="highlight" rowspan="2">KSK</td>
+        <td>5/15/2019</td>
+      </tr>
+      <tr>
+        <td>10005</td>
+        <td>Boy Bawang Spicy (pc)</td>
+        <td>4000</td>
+        <td>5/16/2019</td>
+      </tr>
+      <tr class="gray-bg">
+        <td>10006</td>
+        <td>Boy Bawang Spicy (pack)</td>
+        <td>240</td>
+        <td></td>
+        <td>5/16/2019</td>
+      </tr>
+      <tr>
+        <td>10007</td>
+        <td>Boy Bawang BBQ (pc)</td>
+        <td>3000</td>
+        <td></td>
+        <td>5/17/2019</td>
+      </tr>
+      <tr class="gray-bg">
+        <td>10008</td>
+        <td>Boy Bawang BBQ (pack)</td>
+        <td>210</td>
+        <td></td>
+        <td>5/17/2019</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

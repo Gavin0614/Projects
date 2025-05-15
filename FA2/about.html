@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested List Web Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    .note {
+      color: #666;
+      font-size: 0.9em;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #dcdcdc;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <ul>
+      <li>
+        <label for="name">Your Name*</label><br>
+        <input type="text" id="name" name="name" required>
+      </li>
+      <li>
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" required>
+      </li>
+      <li>
+        <label for="contact">Contact No.*</label><br>
+        <input type="tel" id="contact" name="contact" required>
+      </li>
+      <li>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message"></textarea>
+      </li>
+      <li>
+        <ul>
+          <li class="note">required field*</li>
+          <li><button type="submit">Send</button></li>
+        </ul>
+      </li>
+    </ul>
+  </form>
+
+</body>
+</html>
